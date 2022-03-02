@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <hr>
+        <select id="listname">
+            <option value="select">SELECT</option>
+            <option value="maggi">MAGGI</option>
+            <option value="colgate">COLGATE</option>
+            <option value="perfume">PERFUME</option>
+            <option value="besan">BESAN</option>
+        </select>
+        <select id="quality">
+            <option value="quality">choose your product quality</option>
+            <option value="good"> GOOD </option>
+            <option value="better"> BETTER </option>
+            <option value="niceone"> NICEONE </option>
+        </select>
+
+
+    </center>
+    <button onclick="add()">additem</button>
+    <button onclick="show()">SHOW</button>
+
+    <script>
+        function add(){
+            var listname = document.getElementById('listname').value;
+            getlistname.push(listname);
+
+            var quality=document.getElementById('quality').value;
+            getlistname.push(quality);
+        }
+
+        function show(){
+            getlistname.forEach(function(x){
+                document.write("listname="+x)
+            })
+
+            getlistname.forEach(function(y){
+                document.write("listname="+y)
+            })
+
+        }
+    </script>
+    
+</body>
+</html>
